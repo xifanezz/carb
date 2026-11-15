@@ -38,7 +38,7 @@
 </ul>
 
 <h2>التحليلات وتقارير الأعطال</h2>
-<p>نستخدم أدوات تحليلات عشان نفهم كيف ينستخدم التطبيق ونحسّنه، مثل: الشاشات اللي تفتحها، الأزرار اللي تضغطها، طريقة التسجيل اللي تستخدمها (صوت أو صورة أو بحث)، ومراحل التسجيل الأولى والاشتراك. وتقارير الأعطال تجمع معلومات تقنية عن الخلل. هذي الأدوات تجمع معها معلومات عن الجهاز (الموديل، نسخة iOS، اللغة، الدولة التقريبية من عنوان IP) ومعرّف خاص بالتطبيق. ما نرسل لها أسماء أكلاتك ولا سعراتك ولا وزنك ولا أي بيانات صحية.</p>
+<p>نستخدم <strong>PostHog</strong> للتحليلات و<strong>Sentry</strong> لتقارير الأعطال، عشان نفهم كيف ينستخدم التطبيق ونحسّنه، مثل: الشاشات اللي تفتحها، الأزرار اللي تضغطها، طريقة التسجيل اللي تستخدمها (صوت أو صورة أو بحث)، ومراحل التسجيل الأولى والاشتراك. وتقارير الأعطال تجمع معلومات تقنية عن الخلل. هذي الأدوات تجمع معها معلومات عن الجهاز (الموديل، نسخة iOS، اللغة، الدولة التقريبية من عنوان IP) ومعرّف خاص بالتطبيق. ما نرسل لها أسماء أكلاتك ولا سعراتك ولا وزنك ولا أي بيانات صحية، وما نسجل الشاشة ولا نرفق صور منها. هذي الأدوات ما تستخدم معرّف الإعلانات (IDFA) وما تتبعك بين التطبيقات.</p>
 
 <h2>قياس الحملات الإعلانية</h2>
 <p>إذا وصلت لكارب من إعلان، نستخدم أداة قياس عشان نعرف أي إعلان جابك، وإذا اشتركت بعدها. هذا يساعدنا نعرف وين نصرف على الإعلانات. الأداة تستخدم معرّفات الجهاز ومعلومات التثبيت، ومعرّف الإعلانات (IDFA) بس إذا سمحت بالتتبع.</p>
@@ -55,7 +55,9 @@
   <li><strong>Cloudflare:</strong> تشغيل خدمة الذكاء الاصطناعي.</li>
   <li><strong>OpenAI:</strong> التعرف على الأكل وردود المدرب.</li>
   <li><strong>Apple:</strong> الاشتراكات والدفع.</li>
-  <li><strong>أدوات التحليلات وتقارير الأعطال وقياس الحملات والإعلانات:</strong> نذكر أسماءها هنا قبل ما نضيفها للتطبيق.</li>
+  <li><strong>PostHog:</strong> تحليلات استخدام التطبيق.</li>
+  <li><strong>Sentry:</strong> تقارير الأعطال والأخطاء.</li>
+  <li><strong>أدوات قياس الحملات والإعلانات:</strong> نذكر أسماءها هنا قبل ما نضيفها للتطبيق.</li>
 </ul>
 <p>ما نبيع بياناتك الشخصية.</p>
 
@@ -103,7 +105,7 @@
 </ul>
 
 <h2>Analytics and crash reports</h2>
-<p>We use analytics tools to understand how the app is used and improve it: for example the screens you open, the buttons you tap, which logging method you use (voice, photo or search), and onboarding and subscription steps. Crash reports collect technical details about the problem. These tools also collect device information (model, iOS version, language, approximate country from your IP address) and an app-specific identifier. We never send them your food names, calories, weight or any health data.</p>
+<p>We use <strong>PostHog</strong> for analytics and <strong>Sentry</strong> for crash reports, to understand how the app is used and improve it: for example the screens you open, the buttons you tap, which logging method you use (voice, photo or search), and onboarding and subscription steps. Crash reports collect technical details about the problem. These tools also collect device information (model, iOS version, language, approximate country from your IP address) and an app-specific identifier. We never send them your food names, calories, weight or any health data, and we don't record your screen or attach screenshots. These tools don't use the advertising identifier (IDFA) and don't track you across apps.</p>
 
 <h2>Campaign measurement</h2>
 <p>If you came to Carb from an ad, we use a measurement tool to learn which ad brought you and whether you subscribed later, so we know where to spend on advertising. It uses device and install identifiers, and the advertising identifier (IDFA) only if you allow tracking.</p>
@@ -120,7 +122,9 @@
   <li><strong>Cloudflare:</strong> runs the AI service.</li>
   <li><strong>OpenAI:</strong> food recognition and coach replies.</li>
   <li><strong>Apple:</strong> subscriptions and payments.</li>
-  <li><strong>Analytics, crash reporting, campaign measurement and advertising tools:</strong> we list them here before adding them to the app.</li>
+  <li><strong>PostHog:</strong> app usage analytics.</li>
+  <li><strong>Sentry:</strong> crash and error reports.</li>
+  <li><strong>Campaign measurement and advertising tools:</strong> we list them here before adding them to the app.</li>
 </ul>
 <p>We don't sell your personal data.</p>
 
