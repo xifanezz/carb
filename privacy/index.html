@@ -18,51 +18,42 @@
 <p class="muted">آخر تحديث: ١٦ نوفمبر ٢٠٢٦</p>
 
 <div class="card">
-  <strong>باختصار:</strong> ما نطلب منك حساب. سجل أكلك ووزنك يبقى على جوالك، وبيانات Apple Health ما تطلع منه أبد. نستخدم أدوات تحليلات وقياس حملات وإعلانات، وهذي تجمع بيانات استخدام ومعرّفات للجهاز. التتبع بين التطبيقات يصير بس إذا وافقت عليه في نافذة Apple.
+  <strong>باختصار:</strong> ما نطلب منك حساب. سجل أكلك ووزنك محفوظ على جوالك. ميزات الذكاء الاصطناعي (الصوت والصورة وسيري والمدرب) ترسل المحتوى اللازم لخادمنا ولـ OpenAI بعد موافقتك فقط. نستخدم PostHog للتحليلات وSentry لتقارير الأعطال، بدون معرّف الإعلانات، وما نتتبعك بين التطبيقات ولا نبيع بياناتك.
 </div>
 
 <h2>البيانات اللي تبقى على جوالك</h2>
-<p>وجباتك، أهدافك، وزنك، الماء، والوجبات المحفوظة تنحفظ على جوالك. ما نرفعها لسيرفراتنا، وما نعطيها لأدوات التحليلات أو الإعلانات. إذا حذفت التطبيق، تنحذف معه.</p>
+<p>وجباتك، أهدافك، وزنك، الماء، والوجبات المحفوظة تنحفظ على جوالك. ما نرفع سجلك لسيرفراتنا، وما نعطيه لأدوات التحليلات. الاستثناء الوحيد هو ما ترسله ميزات الذكاء الاصطناعي لما تستخدمها (تحت). إذا حذفت التطبيق، ينحذف السجل معه.</p>
 
 <h2>Apple Health</h2>
-<p>إذا سمحت، كارب يقرأ خطواتك ووزنك من Apple Health، ويحفظ فيه وجباتك (السعرات والبروتين والكارب والدهون) والماء والأوزان. هذي البيانات تبقى بين كارب وApple Health على جوالك. ما تنرسل لنا ولا لأي طرف ثاني، وما تُستخدم أبد للإعلانات أو التسويق أو التحليلات. تقدر توقف الإذن متى ما تبي من إعدادات Apple Health.</p>
+<p>إذا سمحت، كارب يقرأ خطواتك ووزنك من Apple Health، ويحفظ فيه وجباتك (السعرات والبروتين والكارب والدهون) والماء والأوزان. هذي البيانات تبقى على جوالك، إلا إذا استخدمت «اسأل كارب»: وقتها يرسل المدرب خطوات اليوم ووزنك مع سؤالك عشان يجاوبك. بيانات Apple Health ما تُستخدم أبد للإعلانات أو التحليلات أو تُباع.</p>
 
-<h2>الذكاء الاصطناعي: الصوت والصورة والمدرب</h2>
-<p>هذي الميزات تشتغل بس بعد موافقتك داخل التطبيق، وتقدر توقفها من الملف الشخصي.</p>
+<h2>الذكاء الاصطناعي: الصوت والصورة وسيري والمدرب</h2>
+<p>هذي الميزات تشتغل بس بعد موافقتك داخل التطبيق، وتقدر توقفها من «حسابي».</p>
 <ul>
-  <li><strong>وش ينرسل:</strong> التسجيل الصوتي أو صورة الوجبة أو النص اللي كتبته، وفي حال المدرب: رسائلك وملخص يومك (السعرات والوجبات والأهداف) وقائمة أكلات من التطبيق.</li>
-  <li><strong>لمين:</strong> لخدمة كارب على Cloudflare، ثم لخادمنا الخاص. التسجيل الصوتي يتحول لنص على خادمنا نفسه، والنص أو الصورة تروح لـ OpenAI عشان يتعرف على الأكل أو يرد عليك، وترجع النتيجة لجوالك.</li>
+  <li><strong>وش ينرسل:</strong> التسجيل الصوتي أو صورة الوجبة أو الوجبة اللي تقولها لسيري. وفي حال المدرب: رسائلك، وملخص يومك (السعرات والوجبات والأهداف والماء)، وخطواتك ووزنك من Apple Health إذا كانت مربوطة، وقائمة أكلات من التطبيق.</li>
+  <li><strong>لمين:</strong> لخدمة كارب على Cloudflare، ثم لخادمنا الخاص. التسجيل الصوتي يتحول لنص على خادمنا نفسه، والنص أو الصورة أو رسالة المدرب تروح لـ OpenAI عشان يتعرف على الأكل ويقدّر سعراته أو يرد عليك، وترجع النتيجة لجوالك.</li>
   <li><strong>كم يبقى:</strong> خدمتنا ما تحفظ التسجيلات ولا الصور ولا الرسائل، والصور تنحذف من خادمنا بعد الرد مباشرة. السجلات التقنية فيها نوع الطلب ونتيجته ومدته بس، بدون المحتوى. OpenAI تعالج البيانات حسب سياساتها، وقد تحتفظ فيها لفترة محدودة.</li>
-  <li>محتوى التسجيلات والصور والمحادثات ما يروح لأدوات التحليلات أو الإعلانات.</li>
+  <li>محتوى التسجيلات والصور والمحادثات ما يروح لأدوات التحليلات.</li>
   <li><strong>المحادثة مع المدرب</strong> تبقى في ذاكرة التطبيق وتنمسح آخر اليوم.</li>
+  <li>السعرات اللي يقدّرها الذكاء الاصطناعي تقديرية، وكارب يعطي إرشادات عامة وما هو استشارة طبية.</li>
 </ul>
 
 <h2>التحليلات وتقارير الأعطال</h2>
-<p>نستخدم <strong>PostHog</strong> للتحليلات و<strong>Sentry</strong> لتقارير الأعطال، عشان نفهم كيف ينستخدم التطبيق ونحسّنه، مثل: الشاشات اللي تفتحها، الأزرار اللي تضغطها، طريقة التسجيل اللي تستخدمها (صوت أو صورة أو بحث)، ومراحل التسجيل الأولى والاشتراك. وتقارير الأعطال تجمع معلومات تقنية عن الخلل. هذي الأدوات تجمع معها معلومات عن الجهاز (الموديل، نسخة iOS، اللغة، الدولة التقريبية من عنوان IP) ومعرّف خاص بالتطبيق. ما نرسل لها أسماء أكلاتك ولا سعراتك ولا وزنك ولا أي بيانات صحية، وما نسجل الشاشة ولا نرفق صور منها. هذي الأدوات ما تستخدم معرّف الإعلانات (IDFA) وما تتبعك بين التطبيقات.</p>
-
-<h2>قياس الحملات الإعلانية</h2>
-<p>إذا وصلت لكارب من إعلان، نستخدم أداة قياس عشان نعرف أي إعلان جابك، وإذا اشتركت بعدها. هذا يساعدنا نعرف وين نصرف على الإعلانات. الأداة تستخدم معرّفات الجهاز ومعلومات التثبيت، ومعرّف الإعلانات (IDFA) بس إذا سمحت بالتتبع.</p>
-
-<h2>الإعلانات</h2>
-<p>قد يعرض كارب إعلانات من شبكات إعلانية. هذي الشبكات تستخدم معرّفات الجهاز وبيانات الاستخدام عشان تعرض الإعلانات وتقيسها. إذا سمحت بالتتبع، ممكن تكون الإعلانات مخصصة لك حسب نشاطك في تطبيقات ومواقع ثانية. وإذا ما سمحت، تشوف إعلانات غير مخصصة. الإعلانات ما تستخدم أبد بياناتك الصحية أو سجل أكلك.</p>
-
-<h2>التتبع وإذن Apple</h2>
-<p>ما نتتبعك بين التطبيقات والمواقع إلا إذا وافقت في نافذة «السماح بالتتبع» من Apple. تقدر تغيّر رأيك متى ما تبي من الإعدادات ← الخصوصية والأمان ← التتبع. إذا رفضت، كل ميزات كارب تشتغل عادي.</p>
+<p>نستخدم <strong>PostHog</strong> للتحليلات و<strong>Sentry</strong> لتقارير الأعطال، عشان نفهم كيف ينستخدم التطبيق ونحسّنه: مثل الشاشات اللي تفتحها، وطريقة التسجيل اللي تستخدمها (صوت أو صورة أو بحث)، وعدد الأصناف، وأحداث الاشتراك، ونوع الجهاز ونسخة النظام. نستخدم معرّفًا عشوائيًا خاصًا بالتطبيق، مو معرّف الإعلانات، وما نربطه باسمك. ما نرسل لهذي الأدوات أسماء أكلك ولا سعراتك ولا وزنك ولا بيانات Apple Health ولا تسجيلاتك أو صورك أو رسائلك.</p>
 
 <h2>مزودو الخدمة</h2>
 <p>نتعامل مع مزودين يعالجون البيانات لصالحنا، كل واحد حسب سياسته:</p>
 <ul>
   <li><strong>Cloudflare:</strong> تشغيل خدمة الذكاء الاصطناعي.</li>
-  <li><strong>OpenAI:</strong> التعرف على الأكل وردود المدرب.</li>
+  <li><strong>OpenAI:</strong> التعرف على الأكل وتقدير السعرات وردود المدرب.</li>
   <li><strong>Apple:</strong> الاشتراكات والدفع.</li>
   <li><strong>PostHog:</strong> تحليلات استخدام التطبيق.</li>
   <li><strong>Sentry:</strong> تقارير الأعطال والأخطاء.</li>
-  <li><strong>أدوات قياس الحملات والإعلانات:</strong> نذكر أسماءها هنا قبل ما نضيفها للتطبيق.</li>
 </ul>
-<p>ما نبيع بياناتك الشخصية.</p>
+<p>ما نبيع بياناتك الشخصية. إذا أضفنا إعلانات أو أدوات قياس حملات مستقبلاً، نحدّث هالصفحة ونطلب إذن التتبع من Apple قبلها.</p>
 
 <h2>الاشتراكات</h2>
-<p>الدفع يتم عن طريق Apple. ما نستلم بيانات بطاقتك ولا اسمك. التطبيق يعرف إذا اشتراكك فعّال، ونستخدم أحداث الاشتراك (بدأ، تجدد، انلغى) في التحليلات وقياس الحملات.</p>
+<p>الدفع يتم عن طريق Apple. ما نستلم بيانات بطاقتك ولا اسمك. التطبيق يعرف إذا اشتراكك فعّال، ونستخدم أحداث الاشتراك (بدأ، تجدد، انلغى) في التحليلات.</p>
 
 <h2>الأطفال</h2>
 <p>كارب مو موجّه للأطفال تحت ١٣ سنة، وما نجمع بيانات منهم عن قصد.</p>
@@ -70,8 +61,8 @@
 <h2>حقوقك</h2>
 <ul>
   <li>بيانات سجلك على جوالك: تعدلها أو تحذفها من التطبيق، أو تحذف التطبيق كله.</li>
-  <li>توقف التتبع من إعدادات الخصوصية في جوالك، وتوقف ميزات الذكاء الاصطناعي من الملف الشخصي.</li>
-  <li>تقدر تطلب الاطلاع على بياناتك عند مزودي التحليلات والإعلانات أو حذفها، حسب نظام حماية البيانات الشخصية في السعودية. راسلنا ونتابع الطلب معهم.</li>
+  <li>توقف ميزات الذكاء الاصطناعي والمدرب من «حسابي».</li>
+  <li>تقدر تطلب الاطلاع على بياناتك عند مزودي التحليلات أو حذفها، حسب نظام حماية البيانات الشخصية. راسلنا ونتابع الطلب معهم.</li>
 </ul>
 
 <h2>التعديلات</h2>
@@ -85,51 +76,42 @@
 <p class="muted">Last updated: November 16, 2026</p>
 
 <div class="card">
-  <strong>In short:</strong> no account needed. Your food and weight log stays on your iPhone, and Apple Health data never leaves it. We use analytics, campaign measurement and advertising tools, which collect usage data and device identifiers. Tracking across apps happens only if you allow it in Apple's prompt.
+  <strong>In short:</strong> no account needed. Your food and weight log is stored on your iPhone. The AI features (voice, photo, Siri and the coach) send the content they need to our server and to OpenAI, only after you agree. We use PostHog for analytics and Sentry for crash reports, without the advertising identifier. We don't track you across apps and we don't sell your data.
 </div>
 
 <h2>Data that stays on your iPhone</h2>
-<p>Your meals, goals, weight, water and saved meals are stored on your iPhone. We don't upload them to our servers or give them to analytics or advertising tools. Deleting the app deletes them.</p>
+<p>Your meals, goals, weight, water and saved meals are stored on your iPhone. We don't upload your log to our servers or give it to analytics tools. The only exception is what the AI features send when you use them (below). Deleting the app deletes your log.</p>
 
 <h2>Apple Health</h2>
-<p>If you allow it, Carb reads your steps and weight from Apple Health and saves your meals (energy, protein, carbs and fat), water and weigh-ins to it. This data stays between Carb and Apple Health on your iPhone. It is never sent to us or anyone else and is never used for advertising, marketing or analytics. You can turn access off at any time in Apple Health settings.</p>
+<p>If you allow it, Carb reads your steps and weight from Apple Health and saves your meals (energy, protein, carbs and fat), water and weigh-ins to it. This data stays on your iPhone, except when you use Ask Carb: the coach then sends today's steps and your weight with your question so it can answer. Apple Health data is never used for advertising or analytics, and never sold.</p>
 
-<h2>AI features: voice, photo and the coach</h2>
+<h2>AI features: voice, photo, Siri and the coach</h2>
 <p>These work only after you agree in the app, and you can turn them off in Profile.</p>
 <ul>
-  <li><strong>What is sent:</strong> your voice recording, meal photo or typed text. For the coach: your messages, a summary of today (calories, meals and goals) and a list of foods from the app.</li>
-  <li><strong>Where:</strong> to Carb's service on Cloudflare, then to our own server. Voice recordings are turned into text on our own server; the text or photo goes to OpenAI to recognize the food or write a reply, and the result comes back to your iPhone.</li>
+  <li><strong>What is sent:</strong> your voice recording, meal photo, or the meal you tell Siri. For the coach: your messages, a summary of today (calories, meals, goals and water), your steps and weight from Apple Health if connected, and a list of foods from the app.</li>
+  <li><strong>Where:</strong> to Carb's service on Cloudflare, then to our own server. Voice recordings are turned into text on our own server; the text, photo or coach message goes to OpenAI to recognize the food and estimate its calories or to write a reply, and the result comes back to your iPhone.</li>
   <li><strong>How long:</strong> our service doesn't store recordings, photos or messages, and photos are deleted from our server right after the reply. Technical logs hold only the request type, result and duration, never the content. OpenAI processes the data under its own policies and may keep it for a limited time.</li>
-  <li>The content of recordings, photos and chats is never sent to analytics or advertising tools.</li>
+  <li>The content of recordings, photos and chats is never sent to analytics tools.</li>
   <li><strong>Coach chats</strong> stay in the app's memory and clear at the end of the day.</li>
+  <li>AI calorie numbers are estimates. Carb gives general guidance and isn't medical advice.</li>
 </ul>
 
 <h2>Analytics and crash reports</h2>
-<p>We use <strong>PostHog</strong> for analytics and <strong>Sentry</strong> for crash reports, to understand how the app is used and improve it: for example the screens you open, the buttons you tap, which logging method you use (voice, photo or search), and onboarding and subscription steps. Crash reports collect technical details about the problem. These tools also collect device information (model, iOS version, language, approximate country from your IP address) and an app-specific identifier. We never send them your food names, calories, weight or any health data, and we don't record your screen or attach screenshots. These tools don't use the advertising identifier (IDFA) and don't track you across apps.</p>
-
-<h2>Campaign measurement</h2>
-<p>If you came to Carb from an ad, we use a measurement tool to learn which ad brought you and whether you subscribed later, so we know where to spend on advertising. It uses device and install identifiers, and the advertising identifier (IDFA) only if you allow tracking.</p>
-
-<h2>Advertising</h2>
-<p>Carb may show ads from ad networks. These networks use device identifiers and usage data to show and measure ads. If you allow tracking, ads may be personalized based on your activity in other apps and websites; if you don't, you'll see non-personalized ads. Ads never use your health data or food log.</p>
-
-<h2>Tracking and Apple's permission</h2>
-<p>We track you across apps and websites only if you agree in Apple's "Allow Tracking" prompt. You can change this at any time in Settings → Privacy &amp; Security → Tracking. If you decline, every Carb feature still works.</p>
+<p>We use <strong>PostHog</strong> for analytics and <strong>Sentry</strong> for crash reports, to understand how the app is used and improve it: for example the screens you open, which logging method you use (voice, photo or search), how many items, subscription events, and your device model and iOS version. We use a random app-specific identifier, not the advertising identifier, and we don't link it to your name. We never send these tools your food names, calories, weight, Apple Health data, recordings, photos or messages.</p>
 
 <h2>Service providers</h2>
 <p>We work with providers that process data on our behalf, each under its own policy:</p>
 <ul>
   <li><strong>Cloudflare:</strong> runs the AI service.</li>
-  <li><strong>OpenAI:</strong> food recognition and coach replies.</li>
+  <li><strong>OpenAI:</strong> food recognition, calorie estimates and coach replies.</li>
   <li><strong>Apple:</strong> subscriptions and payments.</li>
   <li><strong>PostHog:</strong> app usage analytics.</li>
   <li><strong>Sentry:</strong> crash and error reports.</li>
-  <li><strong>Campaign measurement and advertising tools:</strong> we list them here before adding them to the app.</li>
 </ul>
-<p>We don't sell your personal data.</p>
+<p>We don't sell your personal data. If we add ads or campaign measurement in the future, we'll update this page and ask for Apple's tracking permission first.</p>
 
 <h2>Subscriptions</h2>
-<p>Payments are handled by Apple. We never receive your card details or name. The app knows whether your subscription is active, and we use subscription events (started, renewed, cancelled) in analytics and campaign measurement.</p>
+<p>Payments are handled by Apple. We never receive your card details or name. The app knows whether your subscription is active, and we use subscription events (started, renewed, cancelled) in analytics.</p>
 
 <h2>Children</h2>
 <p>Carb is not directed at children under 13, and we don't knowingly collect their data.</p>
@@ -137,8 +119,8 @@
 <h2>Your rights</h2>
 <ul>
   <li>Your log is on your iPhone: edit or delete it in the app, or delete the app.</li>
-  <li>Turn off tracking in your iPhone's privacy settings, and AI features in Profile.</li>
-  <li>You can ask to access or delete your data held by our analytics and advertising providers under Saudi Arabia's Personal Data Protection Law. Email us and we'll follow up with them.</li>
+  <li>Turn off the AI features and the coach in Profile.</li>
+  <li>You can ask to access or delete your data held by our analytics providers under applicable data protection law, including Saudi Arabia's Personal Data Protection Law. Email us and we'll follow up with them.</li>
 </ul>
 
 <h2>Changes</h2>
