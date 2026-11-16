@@ -31,8 +31,8 @@
 <p>هذي الميزات تشتغل بس بعد موافقتك داخل التطبيق، وتقدر توقفها من الملف الشخصي.</p>
 <ul>
   <li><strong>وش ينرسل:</strong> التسجيل الصوتي أو صورة الوجبة أو النص اللي كتبته، وفي حال المدرب: رسائلك وملخص يومك (السعرات والوجبات والأهداف) وقائمة أكلات من التطبيق.</li>
-  <li><strong>لمين:</strong> لخدمة كارب على Cloudflare، وهي ترسله لـ OpenAI عشان يتعرف على الأكل أو يرد عليك، وترجع النتيجة لجوالك.</li>
-  <li><strong>كم يبقى:</strong> خدمتنا ما تحفظ التسجيلات ولا الصور ولا الرسائل. السجلات التقنية فيها نوع الطلب ونتيجته ومدته بس، بدون المحتوى. OpenAI تعالج البيانات حسب سياسة بيانات الـ API عندها، وهي تقول إنها ما تستخدمها لتدريب نماذجها، وقد تحتفظ فيها لفترة محدودة لمراقبة إساءة الاستخدام.</li>
+  <li><strong>لمين:</strong> لخدمة كارب على Cloudflare، ثم لخادمنا الخاص. التسجيل الصوتي يتحول لنص على خادمنا نفسه، والنص أو الصورة تروح لـ OpenAI عشان يتعرف على الأكل أو يرد عليك، وترجع النتيجة لجوالك.</li>
+  <li><strong>كم يبقى:</strong> خدمتنا ما تحفظ التسجيلات ولا الصور ولا الرسائل، والصور تنحذف من خادمنا بعد الرد مباشرة. السجلات التقنية فيها نوع الطلب ونتيجته ومدته بس، بدون المحتوى. OpenAI تعالج البيانات حسب سياساتها، وقد تحتفظ فيها لفترة محدودة.</li>
   <li>محتوى التسجيلات والصور والمحادثات ما يروح لأدوات التحليلات أو الإعلانات.</li>
   <li><strong>المحادثة مع المدرب</strong> تبقى في ذاكرة التطبيق وتنمسح آخر اليوم.</li>
 </ul>
@@ -98,8 +98,8 @@
 <p>These work only after you agree in the app, and you can turn them off in Profile.</p>
 <ul>
   <li><strong>What is sent:</strong> your voice recording, meal photo or typed text. For the coach: your messages, a summary of today (calories, meals and goals) and a list of foods from the app.</li>
-  <li><strong>Where:</strong> to Carb's service on Cloudflare, which forwards it to OpenAI to recognize the food or write a reply, then returns the result to your iPhone.</li>
-  <li><strong>How long:</strong> our service doesn't store recordings, photos or messages. Technical logs hold only the request type, result and duration, never the content. OpenAI processes the data under its API data policy, which says it isn't used to train models and may be kept for a limited time for abuse monitoring.</li>
+  <li><strong>Where:</strong> to Carb's service on Cloudflare, then to our own server. Voice recordings are turned into text on our own server; the text or photo goes to OpenAI to recognize the food or write a reply, and the result comes back to your iPhone.</li>
+  <li><strong>How long:</strong> our service doesn't store recordings, photos or messages, and photos are deleted from our server right after the reply. Technical logs hold only the request type, result and duration, never the content. OpenAI processes the data under its own policies and may keep it for a limited time.</li>
   <li>The content of recordings, photos and chats is never sent to analytics or advertising tools.</li>
   <li><strong>Coach chats</strong> stay in the app's memory and clear at the end of the day.</li>
 </ul>
